@@ -1,0 +1,10 @@
+---------------------------------------------
+
+Another way of writing a for loop
+
+for(char a : someString)
+{
+	// Code here..
+}
+
+---------------------------------------------
