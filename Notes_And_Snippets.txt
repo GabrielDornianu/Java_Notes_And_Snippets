@@ -63,3 +63,16 @@ You can create a method which takes an infinite amount of parameters like this
 int static someMethod(int ... values){
 	// Your code here...
 }
+
+---------------------------------------------
+
+In java, arguments are passed by value, not by reference.
+
+---------------------------------------------
+
+Variables storing objects are actually pointers  to those objects.
+If multiple variables have the same object value, they actually point to the same object in memory.
+Also, if you use an object name as a function argument, it is a pass by reference, since you use a pointer to the object as the actual parameter.
+
+Note: String object is an exception to this rule, since it is "immutable". Once created, a String cannot be modified further. It can however be changed to point to another new string.
+
