@@ -8,3 +8,31 @@ for(char a : someString)
 }
 
 ---------------------------------------------
+
+You can use underscores to increase the readability of int, short, long, float and double
+
+int someValue = 10_000; // is equivalent to 10000
+
+---------------------------------------------
+
+String concatenation is best to be done with StringBuilder class. This way you only have to create one object, instead of an object for each string
+
+eg:
+StringBuilder builder = new StringBuilder("Hello")
+.append(" ")
+.append("world")
+.append("!");
+
+Note the concatenatios is being done through append method
+
+---------------------------------------------
+
+You can't compare strings with == because it tests whether they are or not the same object. It tests the reference. You can however compare them with the equals method
+
+s1.equals(s2);
+
+Like this
+
+---------------------------------------------
+---------------------------------------------
+---------------------------------------------
