@@ -34,5 +34,32 @@ s1.equals(s2);
 Like this
 
 ---------------------------------------------
+
+There can be multiple catch() statements in java.
+You should create a catch statement for each exception the try block may throw
+
+eg:
+ catch (ArrayIndexOutOfBoundsException e) {
+	System.out.println("Array index problem");
+} catch (StringIndexOutOfBoundsException e) {
+	System.out.println("String index problem");	
+}
+
 ---------------------------------------------
+
+You can throw your own exceptions like this:
+if(s1Chars.length > 10)
+{
+	Exception ce = new Exception("My very own exception");
+	throw (ce);
+}
+
+You would also have to add a catch(Exception e) to handle the exception
+
 ---------------------------------------------
+
+You can create a method which takes an infinite amount of parameters like this
+
+int static someMethod(int ... values){
+	// Your code here...
+}
